@@ -1,0 +1,38 @@
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+$session.Cookies.Add((New-Object System.Net.Cookie("GuestData", "UserID=-454726240", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_gcl_au", "1.1.2124132994.1677985682", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXcb", "RBXViralAcquisition=true&RBXSource=true&GoogleAnalytics=true", "/", "www.roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXSource", "rbx_acquisition_time=3/4/2023 9:08:04 PM&rbx_acquisition_referrer=https://www.roblox.com/&rbx_medium=Direct&rbx_source=www.roblox.com&rbx_campaign=&rbx_adgroup=&rbx_keyword=&rbx_matchtype=&rbx_send_info=1", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utmz", "200924205.1678274642.3.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXEventTrackerV2", "CreateDate=3/27/2023 7:01:23 AM&rbxid=3168512413&browserid=164485310254", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.2.252802088.1679820270", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_BK4ZY0C59K", "GS1.1.1680095216.6.1.1680095288.0.0.0", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXImageCache", "timg=h82jCvlC1hoAhcdWncVx9AdVfadEYgpHrfg8pUisL1p_snb92j4ZsbwlnP2fQKdUVDu5bcKRnJ5777fCumSZ0o5daDtcer8hZIq1v48lMUa9PZS2DJZF4fiA_epARjLhaOe_GKQzBrQL0vxNqSdP4oY6tT8MEtcwQ2uvQRKDWIsdeSZRnnLoj6aU2DxULT_98UPQo6LntJlzpbSNoXnmPA", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utma", "200924205.1778420688.1677985686.1680095211.1680275261.14", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utmc", "200924205", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie(".ROBLOSECURITY", "_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_50428E35DDAB7211F9C21932B3A117DDA39F21BFCAE7DED9406C8066B298A5E57779348B7AE9ECADC451F35DC979632E06CF5C4F7AA2852182BAF6A3A68DA5540AC05EBC4F02DBFCEE975E41AC95A563285F190ED2675CF82A17DB24B433991599CD79BB522F07E4B674A4E1E77597ECEE545EF25B9633FA88265B30FE84FE458C4F51B47000B1A7799C09CE6EBD7BF7A18B9DBA6151B6F86BE0F0F92A7583595E1E09A6182D23F43A631D4098CEAA3226B86220432B3EEE1BB342CC584DD72AFF501E26730D4BCCF713BF9D31CB77CF63396BFD884C10B47628D0ACA0B37893C8DBB44F30359E97C4735AEC9635165B47EF856E25301CE502D88C10C5BFA0E2A2BC615957FBF9E3B9251B04A458AFCA550FF184E8D81968A12A8A2D54EF4714E48FD2809BAB33D4B8DD273D206E1FD4934B55DB05CA26F1CFFDDB7984A107D48E3CD23D778B1038BC829907155E2178D88FA3353475769AB096349AEEF23957611D967BC1E0E493510EE59A5D036A543B7E6680", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXSessionTracker", "sessionid=4e584270-44a9-4ef9-8a60-428ed8806e64", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__RequestVerificationToken", "-TJr3QIoFCwkQXsPNVBvcgFHJ5hNW94pQwau698BvmLjAMve7lvjrcaGUGcbcFYpnhOFXj_STwqMOwXP5NYmhSAK6sM1", "/", "www.roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("rbx-ip2", "", "/", ".roblox.com")))
+Invoke-WebRequest -UseBasicParsing -Uri "https://www.roblox.com/games/2753915549/Blox-Fruits" `
+-WebSession $session `
+-Headers @{
+"authority"="www.roblox.com"
+  "method"="GET"
+  "path"="/games/2753915549/Blox-Fruits"
+  "scheme"="https"
+  "accept"="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+  "accept-encoding"="gzip, deflate, br"
+  "accept-language"="en-US,en;q=0.9"
+  "cache-control"="max-age=0"
+  "referer"="https://www.roblox.com/home"
+  "sec-ch-ua"="`"Google Chrome`";v=`"111`", `"Not(A:Brand`";v=`"8`", `"Chromium`";v=`"111`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="document"
+  "sec-fetch-mode"="navigate"
+  "sec-fetch-site"="same-origin"
+  "sec-fetch-user"="?1"
+  "upgrade-insecure-requests"="1"
+}
